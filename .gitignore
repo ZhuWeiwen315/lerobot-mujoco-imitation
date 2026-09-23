@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+datasets/
+checkpoints/
+outputs/
+logs/
+cache/
+*.mp4
