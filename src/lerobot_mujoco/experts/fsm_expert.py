@@ -94,6 +94,8 @@ class PandaLiftFSMExpert:
             self.state == ExpertState.LIFT
             and bool(info.get("is_lifted", False))
         ):
+            # Freeze the current pose so HOLD maintains a fixed height.
+            self._lift_target = eef_pos.copy()
             self._transition(ExpertState.HOLD)
 
         if self.state == ExpertState.APPROACH:

@@ -19,7 +19,7 @@ class PandaLiftConfig:
     image_size: int = 96
     control_frequency: int = 20
     max_episode_steps: int = 300
-    lift_height_margin: float = 0.04
+    lift_height_margin: float = 0.08
     success_hold_steps: int = 10
 
 
