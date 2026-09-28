@@ -8,3 +8,6 @@ __pycache__/
 /logs/
 /cache/
 *.mp4
+
+# Keep selected qualitative rollout videos.
+!assets/rollouts/*.mp4
