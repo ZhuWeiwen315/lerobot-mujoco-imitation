@@ -28,6 +28,17 @@ confidence intervals, paired seed comparisons, clipping diagnostics, and
 statistical interpretation. The raw training and paired evaluation CSVs are
 available under [`results/`](results/).
 
+## Qualitative rollouts
+
+The following rollouts use the baseline policy with
+`n_action_steps=20`. Click either animation to open the corresponding
+MP4 video.
+
+| Successful rollout | Representative failure |
+|:---:|:---:|
+| [![Successful Panda Lift rollout](assets/rollouts/success_seed_1003.gif)](assets/rollouts/success_seed_1003.mp4) | [![Failed Panda Lift rollout](assets/rollouts/failure_seed_1040.gif)](assets/rollouts/failure_seed_1040.mp4) |
+| Seed 1003 succeeded under all evaluated action horizons. | Seed 1040 failed with 20 action steps but succeeded with 1 and 5, illustrating the effect of replanning frequency. |
+
 ## System overview
 
 ```mermaid
@@ -390,7 +401,6 @@ This project is licensed under the
 
 ## Future work
 
-- Add qualitative rollout videos.
 - Compare ACT with a single-step behavior-cloning baseline.
 - Evaluate multiple dataset sizes and model-training seeds.
 - Study state-dependent or uncertainty-triggered replanning.
