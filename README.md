@@ -31,7 +31,7 @@ statistical interpretation.
 
 ```mermaid
 flowchart TD
-    A["MuJoCo + robosuite<br/>Panda Lift"] --> B["Closed-loop FSM expert"]
+    A["Panda Lift simulation"] --> B["Closed-loop FSM expert"]
     B --> C["Aligned raw NPZ episodes"]
     C --> D["LeRobotDataset v3"]
     D --> E["ACT training and validation"]
