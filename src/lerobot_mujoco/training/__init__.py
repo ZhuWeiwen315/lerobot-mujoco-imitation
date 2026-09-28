@@ -6,9 +6,15 @@ from .checkpoint import (
     restore_act_training_state,
     save_act_checkpoint,
 )
+from .evaluation import (
+    ACTEvaluationMetrics,
+    evaluate_act_policy,
+)
 
 __all__ = [
+    "ACTEvaluationMetrics",
     "ACTExperimentConfig",
+    "evaluate_act_policy",
     "load_act_policy_bundle",
     "restore_act_training_state",
     "save_act_checkpoint",
