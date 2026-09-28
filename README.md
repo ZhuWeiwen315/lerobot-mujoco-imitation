@@ -388,9 +388,9 @@ baseline, not a new imitation-learning algorithm.
 This project is licensed under the
 [Apache License 2.0](LICENSE).
 
-## Next steps
+## Future work
 
-- Add learning curves and qualitative rollout videos.
+- Add qualitative rollout videos.
 - Compare ACT with a single-step behavior-cloning baseline.
 - Evaluate multiple dataset sizes and model-training seeds.
 - Study state-dependent or uncertainty-triggered replanning.
