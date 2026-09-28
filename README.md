@@ -380,6 +380,11 @@ checkpoint validation, paired ablation statistics, and report generation.
 This repository presents a reproducible engineering and experimental
 baseline, not a new imitation-learning algorithm.
 
+## License
+
+This project is licensed under the
+[Apache License 2.0](LICENSE).
+
 ## Next steps
 
 - Add learning curves and qualitative rollout videos.
