@@ -25,7 +25,8 @@ execution.
 
 See [`docs/action_chunk_ablation.md`](docs/action_chunk_ablation.md) for
 confidence intervals, paired seed comparisons, clipping diagnostics, and
-statistical interpretation.
+statistical interpretation. The raw training and paired evaluation CSVs are
+available under [`results/`](results/).
 
 ## System overview
 
@@ -103,12 +104,14 @@ The baseline ACT experiment used:
 - Approximately 51.6 million parameters
 - One RTX 3090 for the reported baseline run
 
-Validation action L1 decreased from `0.8318` before training to `0.0851` at
-step 5,000. The final checkpoint achieved an 88% closed-loop success rate on
-50 unseen seeds.
+Validation action L1 decreased from `0.8318` before training to a minimum of
+`0.0840` at step 4,500 and finished at `0.0851` at step 5,000. The final
+checkpoint achieved an 88% closed-loop success rate on 50 unseen seeds.
 
 A low offline validation loss is not treated as the final metric: policy
 quality is measured through closed-loop simulator rollouts.
+
+![ACT training and validation loss](assets/training_curves.png)
 
 ## Repository layout
 
